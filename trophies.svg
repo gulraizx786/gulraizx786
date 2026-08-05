@@ -1,52 +1,60 @@
-<svg width="820" height="170" viewBox="0 0 820 170" xmlns="http://www.w3.org/2000/svg">
-<defs>
-  <linearGradient id="tbg" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#0f0524"/>
-    <stop offset="100%" stop-color="#2a0e4a"/>
-  </linearGradient>
-  <linearGradient id="shine2" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
-    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
-    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
-  </linearGradient>
-</defs>
+<svg width="690" height="112" viewBox="0 0 690 112" xmlns="http://www.w3.org/2000/svg">
 <style>
 <![CDATA[
   text { font-family: 'Segoe UI', Verdana, Arial, sans-serif; }
-  .cell { opacity:0; animation: popKf 0.5s ease forwards; }
-  @keyframes popKf { from { opacity:0; } to { opacity:1; } }
-  .shineSweep { animation: sweepKf 3s linear infinite; }
-  @keyframes sweepKf { 0% { transform: translateX(-140px); } 100% { transform: translateX(140px); } }
+  .mono { font-family: 'Courier New', Consolas, monospace; }
+  .card { opacity:0; animation: rise 0.6s ease forwards; }
+  @keyframes rise { to { opacity:1; } }
+  .bar { animation: grow 1s ease forwards; }
+  @keyframes grow { from { width:0; } }
 ]]>
 </style>
-<rect x="0" y="0" width="820" height="170" rx="14" fill="url(#tbg)" stroke="#4a1259"/>
-
-<g class="cell" transform="translate(20,20)" style="animation-delay:0.1s">
-  <rect width="180" height="130" rx="12" fill="#1a0a35" stroke="#ff4fd8"/>
-  <text x="90" y="46" font-size="30" text-anchor="middle">&#127942;</text>
-  <text x="90" y="80" font-size="12" fill="#f1e9ff" text-anchor="middle">Pull Shark</text>
-  <text x="90" y="100" font-size="10" fill="#c9b8ea" text-anchor="middle">rank: coming soon</text>
-  <g clip-path="none"><rect class="shineSweep" x="-30" y="0" width="60" height="130" fill="url(#shine2)"/></g>
+<g class="card" style="animation-delay:0.05s" transform="translate(8,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#ff4fd8" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#127760;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#ff8de3" text-anchor="end">A</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Web Dev</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">3 live sites</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#ff4fd8"/>
 </g>
-<g class="cell" transform="translate(220,20)" style="animation-delay:0.25s">
-  <rect width="180" height="130" rx="12" fill="#1a0a35" stroke="#a855f7"/>
-  <text x="90" y="46" font-size="30" text-anchor="middle">&#11088;</text>
-  <text x="90" y="80" font-size="12" fill="#f1e9ff" text-anchor="middle">Starstruck</text>
-  <text x="90" y="100" font-size="10" fill="#c9b8ea" text-anchor="middle">rank: coming soon</text>
-  <rect class="shineSweep" x="-30" y="0" width="60" height="130" fill="url(#shine2)" style="animation-delay:0.4s"/>
+<g class="card" style="animation-delay:0.15s" transform="translate(120,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#c084fc" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#128202;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#d8b4fe" text-anchor="end">A</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Data Analyst</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">Interloop Ltd</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#c084fc"/>
 </g>
-<g class="cell" transform="translate(420,20)" style="animation-delay:0.4s">
-  <rect width="180" height="130" rx="12" fill="#1a0a35" stroke="#7c3aed"/>
-  <text x="90" y="46" font-size="30" text-anchor="middle">&#128293;</text>
-  <text x="90" y="80" font-size="12" fill="#f1e9ff" text-anchor="middle">Quickdraw</text>
-  <text x="90" y="100" font-size="10" fill="#c9b8ea" text-anchor="middle">rank: coming soon</text>
-  <rect class="shineSweep" x="-30" y="0" width="60" height="130" fill="url(#shine2)" style="animation-delay:0.8s"/>
+<g class="card" style="animation-delay:0.25s" transform="translate(232,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#fbbf24" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#127891;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#fcd34d" text-anchor="end">S</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Certified</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">Coursera x3</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#fbbf24"/>
 </g>
-<g class="cell" transform="translate(620,20)" style="animation-delay:0.55s">
-  <rect width="180" height="130" rx="12" fill="#1a0a35" stroke="#ff8de3"/>
-  <text x="90" y="46" font-size="30" text-anchor="middle">&#128640;</text>
-  <text x="90" y="80" font-size="12" fill="#f1e9ff" text-anchor="middle">YOLO</text>
-  <text x="90" y="100" font-size="10" fill="#c9b8ea" text-anchor="middle">rank: coming soon</text>
-  <rect class="shineSweep" x="-30" y="0" width="60" height="130" fill="url(#shine2)" style="animation-delay:1.2s"/>
+<g class="card" style="animation-delay:0.35s" transform="translate(344,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#22d3ee" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#129302;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#67e8f9" text-anchor="end">A</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Prompt Eng</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">Vanderbilt</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#22d3ee"/>
+</g>
+<g class="card" style="animation-delay:0.45s" transform="translate(456,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#4ade80" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#128170;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#86efac" text-anchor="end">B</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Iron Flex</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">Fitness build</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#4ade80"/>
+</g>
+<g class="card" style="animation-delay:0.55s" transform="translate(568,10)">
+  <rect width="100" height="92" rx="9" fill="#1b0c2b" stroke="#fb923c" stroke-width="1.2"/>
+  <text x="14" y="30" font-size="15">&#128640;</text>
+  <text x="86" y="30" font-size="11" font-weight="800" class="mono" fill="#fdba74" text-anchor="end">B</text>
+  <text x="50" y="56" font-size="9.5" font-weight="700" fill="#f7eafb" text-anchor="middle">Shipper</text>
+  <text x="50" y="70" font-size="7" fill="#b696d0" text-anchor="middle">Always live</text>
+  <rect class="bar" x="16" y="78" width="68" height="3" rx="2" fill="#fb923c"/>
 </g>
 </svg>
